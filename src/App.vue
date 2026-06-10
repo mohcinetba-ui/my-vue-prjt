@@ -1,13 +1,26 @@
+<script setup>
+import Header from './components/Header.vue'
+import Skills from './components/Skills.vue'
+import Projects from './components/Projets.vue';
+const nom ="MOHCINE TBA"
+</script>
+
 <template>
-  <div>
-    <h1>frist h1</h1>
-    <p>frist test vue.js</p>
+  <div class="container">
+    <Header />
+    <Skills />
+    <h2>À propos de moi</h2>
+    <p>
+      Je suis passionné par le développement web et j'apprends actuellement
+      Vue.js pour créer des applications modernes.
+    </p>
   </div>
 </template>
-<script setup lang="ts">
-</script>
+
 <style>
-h1 {
-  color: green;
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
 }
 </style>
